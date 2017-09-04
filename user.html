@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>SudhanvaMG</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/blood.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+        <section style="color:black;">
+          User Blog
+					<section style="color:black; padding-top:230px;" data-background="images/41.png">
+            <p class="work">
+								This consists of only backend code of a user blog.
+                The API's are built to perform operations . It is built using loopback framework <br>
+                Features :
+                <ul class="occup">
+                  <li>CRUD operations</li>
+                  <li>Relationships between different users and their blogs</li>
+                  <li>Every user can view others blog but cannot edit</li>
+                  <li>Comment on blogs</li>
+                </ul>
+            	</p>
+            </section>
+					<section style="color:black;"data-background="images/42.png"></section>
+          <section style="color:black;"data-background="images/43.png"></section>
+          <section style="color:black;"data-background="images/44.png">	</section>
+          <section style="color:black;"data-background="images/45.png">
+            <p class="occup">
+              <a href="index.html#/3/2">Go Back</a>
+            </p>
+					</section>
+      	</section>
+      </div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+			Reveal.configure({ backgroundTransition: 'slide' });
+		</script>
+	</body>
+</html>

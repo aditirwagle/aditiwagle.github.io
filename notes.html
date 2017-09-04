@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>SudhanvaMG</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/blood.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+        <section style="color:black;">
+          	Notes App
+					<section style="color:black; padding-top:10px" data-background="images/31.png">
+            <p class="work">
+								This is a single page application built with react , node and mongo.
+                It is used to save user's notes . Each user will be able to view his/her own notes
+                and cannot view others.<br>
+                Features :
+                <ul class="work">
+                  <li>Each note can be given a priority</li>
+                  <li>Every priority will have a unique color</li>
+                  <li>The user can add new notes , edit exisiting ones and delete notes</li>
+                  <li>Each user can have any number of notes and each node can have max 50chars</li>
+                </ul>
+              </p>
+            </section>
+					<section style="color:black;"data-background="images/32.png"></section>
+          <section style="color:black;"data-background="images/33.png"></section>
+          <section style="color:black;"data-background="images/34.png"></section>
+          <section style="color:black;"data-background="images/35.png"></section>
+          <section data-background-video="images/notesapp.mp4">
+            <p class="work" style="padding-left:1000px;">
+              <a href="index.html#/3/1">Go Back</a>
+            </p>
+					</section>
+				</section>
+      </div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+			Reveal.configure({ backgroundTransition: 'slide' });
+		</script>
+	</body>
+</html>
